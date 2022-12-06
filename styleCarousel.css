@@ -1,0 +1,90 @@
+.mySlides {display: none}
+img {vertical-align: middle;}
+#firstLine{
+    color: rgb(255, 255, 255);
+    background-color: rgb(21, 21, 21);
+    padding: 5px;
+    text-align: center;
+    border-width: 5px;
+    border-style: solid;
+    animation: mymove 5s infinite;
+    -webkit-animation: mymove 5s infinite; 
+}
+@keyframes mymove {
+    0% {border-color: rgb(234, 176, 223);}
+    25% {border-color: rgb(146, 184, 171);}
+    50% {border-color: rgb(210, 181, 245);}
+    75% {border-color: rgb(146, 184, 171);}
+    100% {border-color: rgb(234, 176, 223);}
+}
+.header {
+    padding: 0.5vw;
+    text-align: center;
+    background: #090909e0;
+    color: white;
+  }
+.slideshow-container { /*konteynera na snimki kato background*/
+    max-height: 40vw;
+    position: relative;
+    margin: 0;
+    padding: 0;
+  }
+  .prev, .next { /*butonite za smqna na snimki*/
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  .next { /*poziciqta na butona za nadqsno da e v dqsno*/
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover { /*pri preminavane prez butonite da imat background*/
+    background-color: rgba(0,0,0,0.8);
+  }
+  .prev{ /*budona za predishna snimka da e otlqvo*/
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .text { /*texta na snimkata*/
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute; /*da e varhu snimkata*/
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  .numbertext { /*text na nomer na snimka (1/4)*/
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 1vw 48vw;
+    position: absolute;
+    top: 0;
+  }
+  .dot {
+
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+
+}
+  .active, .dot:hover { /*pri preminavane na mishkata prez tochkata si smenq cveta*/
+    background-color: #717171;
+  }
+  .animation {
+    animation-direction: alternate-reverse;
+    animation-duration: 1.5s;
+  }

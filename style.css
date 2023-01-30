@@ -59,4 +59,8 @@ body {
   #chart_div{
     margin: 300px;
   }
+  #pseudo::first-letter{
+      color: #ff0000;
+      font-size: xx-large;
+  }
   

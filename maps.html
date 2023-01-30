@@ -6,13 +6,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Map</title>
     <link rel="icon" href="logo3.png">
+    <link rel="stylesheet" href="style.css"> <!--link to css-->
+    <link rel="stylesheet" href="styleCarousel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--link to google font-->
+    <link rel="stylesheet" href="dropDown.css">
+    <link rel="icon" href="logo3.png">
+    <link rel="stylesheet" href="map.css">
 </head>
 <body>
-    <h1>You can find our location on the map below:</h1>
-    <iframe id="mapholder" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1004.8299248178553!2d23.387505860890688!3d42.657504388019674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa868a6c82fc05%3A0xed9dd2cc56a95d15!2z0KPQvdC40LLQtdGA0YHQuNGC0LXRgiDQv9C-INCx0LjQsdC70LjQvtGC0LXQutC-0LfQvdCw0L3QuNC1INC4INC40L3RhNC-0YDQvNCw0YbQuNC-0L3QvdC4INGC0LXRhdC90L7Qu9C-0LPQuNC4!5e0!3m2!1sbg!2sbg!4v1670672319266!5m2!1sbg!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <p id="demo">Click here to find your location</p>
-    <button onclick="getLocation()">your location</button>
-    <div id="mapholder"></div>
-    <script src="getLocation.js"></script>
+        <!-- firstline -->
+    <div id="firstLine" >
+         <h4>Welcome to your new design journey</h4>
+    </div>
+   
+      <!-- Header -->
+    <div class="header">
+        <div class="slideshow-container">
+ 
+             <div class="mySlides animation">
+               <div class="numbertext">1 / 4</div>
+               <img src="livingroom1.jpeg" style="height:20vw">
+               <div class="text">livingroom1</div>
+             </div>
+             
+             <div class="mySlides animation">
+               <div class="numbertext">2 / 4</div>
+               <img src="bedroom2.jpg" style="height:20vw">
+               <div class="text">bedroom2</div>
+             </div>
+             
+             <div class="mySlides animation">
+               <div class="numbertext">3 / 4</div>
+               <img src="design3.jpg" style="height:20vw">
+               <div class="text">design3</div>
+             </div>
+ 
+             <div class="mySlides animation">
+                 <div class="numbertext">4 / 4</div>
+                 <img src="kitchen4.jfif" style="height:20vw">
+                 <div class="text">kitchen4</div>
+             </div>
+             
+             <a class="prev" onclick="plusSlides(-1)">❮</a>
+             <a class="next" onclick="plusSlides(1)">❯</a>
+             
+             </div>
+             <br>
+             
+             <div style="text-align:center">
+               <span class="dot" onclick="currentSlide(1)"></span> 
+               <span class="dot" onclick="currentSlide(2)"></span> 
+               <span class="dot" onclick="currentSlide(3)"></span>
+               <span class="dot" onclick="currentSlide(4)"></span> 
+             </div>
+             <!--carousel script-->
+             <script src="script.js"></script> 
+             </div>        
+             <div class="navbar">
+                <img id="logo" src="logo4.png" alt="logo">
+             <div class="dropdown">
+                <button class="dropbtn">Home</button>
+                <div class="dropdown-content">
+                    <a href="aboutUs.html">About Us</a>
+                    <a href="careers.html">Careers</a>
+                    <a href="statistics.html">Statistics</a>
+                </div>
+             </div>
+             <div class="dropdown">
+                <button class="dropbtn">Products</button>
+                <div class="dropdown-content">
+                     <a href="#">Beds</a>
+                     <a href="#">Wardrobes</a>
+                     <a href="#">Sofas</a>
+                     <a href="#">Armchairs</a>
+                     <a href="#">Modular Kitchen</a>
+                </div>
+             </div>  
+             <div class="dropdown">
+                <button class="dropbtn">Projects</button>
+                <div class="dropdown-content">
+                     <a href="#">Bedroom</a>
+                     <a href="#">Livingroom</a>
+                     <a href="#">Kitchen</a>
+                </div>
+             </div>  
+             <div class="dropdown">
+                <button class="dropbtn">Contacts</button>
+                <div class="dropdown-content">
+                     <a href="#">Phone</a>
+                     <a href="#">Address</a>
+                     <a href="maps.html">Map</a>
+                </div>
+         </div>  
+     </div>      
+        <div class="map">
+            <h2>Our location is:</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11736.68465650087!2d23.3877062!3d42.6577281!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xed9dd2cc56a95d15!2z0KPQvdC40LLQtdGA0YHQuNGC0LXRgiDQv9C-INCx0LjQsdC70LjQvtGC0LXQutC-0LfQvdCw0L3QuNC1INC4INC40L3RhNC-0YDQvNCw0YbQuNC-0L3QvdC4INGC0LXRhdC90L7Qu9C-0LPQuNC4!5e0!3m2!1sbg!2sbg!4v1675106752521!5m2!1sbg!2sbg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
 </body>
 </html>

@@ -5,9 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Statistics</title>
+    <link rel="stylesheet" href="style.css"> <!--link to css-->
+    <link rel="stylesheet" href="styleCarousel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap" rel="stylesheet"> <!--link to google font-->
+    <link rel="stylesheet" href="dropDown.css">
     <link rel="icon" href="logo3.png">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    
 </head>
-<body>
+<body><div id="firstLine" >
+    <h4>Welcome to your new design journey</h4>
+</div>
+
+ <!-- Header -->
+<div class="header">
+    <div class="slideshow-container">
+
+        <div class="mySlides animation">
+          <div class="numbertext">1 / 4</div>
+          <img src="livingroom1.jpeg" style="height:20vw">
+          <div class="text">livingroom1</div>
+        </div>
+        
+        <div class="mySlides animation">
+          <div class="numbertext">2 / 4</div>
+          <img src="bedroom2.jpg" style="height:20vw">
+          <div class="text">bedroom2</div>
+        </div>
+        
+        <div class="mySlides animation">
+          <div class="numbertext">3 / 4</div>
+          <img src="design3.jpg" style="height:20vw">
+          <div class="text">design3</div>
+        </div>
+
+        <div class="mySlides animation">
+            <div class="numbertext">4 / 4</div>
+            <img src="kitchen4.jfif" style="height:20vw">
+            <div class="text">kitchen4</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span> 
+        </div>
+        <!--carousel script-->
+        <script src="script.js"></script> 
+    </div>        
+    <div class="navbar">
+        <img id="logo" src="logo4.png" alt="logo">
+        <div class="dropdown">
+            <button class="dropbtn">Home</button>
+            <div class="dropdown-content">
+                <a href="aboutUs.html">About Us</a>
+                <a href="careers.html">Careers</a>
+                <a href="statistics.html">Statistics</a>
+            </div>
+        </div>
+    <div class="dropdown">
+        <button class="dropbtn">Products</button>
+        <div class="dropdown-content">
+            <a href="#">Beds</a>
+            <a href="#">Wardrobes</a>
+            <a href="#">Sofas</a>
+            <a href="#">Armchairs</a>
+            <a href="#">Modular Kitchen</a>
+        </div>
+    </div>  
+    <div class="dropdown">
+        <button class="dropbtn">Projects</button>
+        <div class="dropdown-content">
+            <a href="#">Bedroom</a>
+            <a href="#">Livingroom</a>
+            <a href="#">Kitchen</a>
+        </div>
+    </div>  
+    <div class="dropdown">
+        <button class="dropbtn">Contacts</button>
+        <div class="dropdown-content">
+            <a href="#">Phone</a>
+            <a href="#">Address</a>
+            <a href="maps.html">Map</a>
+        </div>
+    </div>  
+</div>
+<div id="chart_div">
+    <script src="chart.js"></script>
+</div>      
     
 </body>
 </html>

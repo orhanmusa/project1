@@ -56,4 +56,7 @@ body {
       flex-direction: column;
     }
   }
+  #chart_div{
+    margin: 300px;
+  }
   
